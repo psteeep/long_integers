@@ -15,13 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="method.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Toom-Cook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Schonhage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Karatsuba.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
