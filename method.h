@@ -12,7 +12,9 @@ using namespace std;
 class Method {
 public:
 
-
+    int gcd(int a, int b) {
+        return b ? gcd(b, a % b) : a;
+    }
 
     void factor(int n)
     {
@@ -59,7 +61,7 @@ public:
         // GCD such that  
         len = pairs.size();
         for (int i = 0; i < len; i++) {
-            int factor = 5; // = __gcd(pairs[i][0] - pairs[i][1], n);
+            int factor = gcd(pairs[i][0] - pairs[i][1], n);
             
             // If we find a factor other than 1, then  
             // appending it to the final factor array 
@@ -88,12 +90,10 @@ public:
             x = ((x * x) + a) % n;
             y = ((y * y) + a) % n;
             y = ((y * y) + a) % n;
-            //g =__gcd(abs(x - y), n);
+            g = gcd(abs(x - y), n);
         }
         return g;
     }
-
-
 
 
 };

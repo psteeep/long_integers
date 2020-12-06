@@ -7,7 +7,7 @@
 int main() {
     
     int act;
-    cout << "Enter what do u want (1, 3, 8 , 7) -> " << endl;
+    cout << "Enter what do u want (1, 3, 4, 8 , 7) -> " << endl;
     cin >> act;
     string first, second;
 
@@ -34,6 +34,7 @@ int main() {
     case 2:
         break;
     case 3:
+    case 4:
         cout << "\tSchonhage\n";
         cout << "enter the first multiplier => ";
         cin >> a;
@@ -44,10 +45,8 @@ int main() {
         n = sch.noOfDigit(a);
         m = sch.noOfDigit(b);
 
-        cout << "Result = ";
+ 
         sch.schonhageStrassenMultiplication(a, b, n, m);
-        break;
-    case 4:
         break;
     case 5:
         break;

@@ -37,7 +37,7 @@ public:
         nextCarry = linearConvolution[i] / 10;
         base *= 10;
     }
-    cout << "\nThe Product of the numbers is: " << product;
+    cout << "Result =  " << product;
     delete[] linearConvolution;
     }
 
